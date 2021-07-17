@@ -1,0 +1,27 @@
+{
+  "name": "graphql-express",
+  "version": "0.0.1",
+  "description": "Test application to work with graphql server along with node-express",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "graphql",
+    "node",
+    "express"
+  ],
+  "author": "https://github.com/gauriz",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^16.3.3",
+    "apollo-server-express": "^2.25.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "mongodb": "^4.0.0",
+    "mongoose": "^5.13.3",
+    "nodemon": "^2.0.12"
+  }
+}

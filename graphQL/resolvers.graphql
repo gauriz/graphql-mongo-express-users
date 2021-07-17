@@ -1,0 +1,24 @@
+const Users = require('../connector/dbConnector.js');
+const UUIDhelper = require('../helpers/UUID.helper.js');
+const UserService = require('../services/user.service.js');
+
+/**
+* GraphQL Resolvers 
+**/
+const resolvers={
+    Query:{
+            getAllUsers: (root) => {
+                return UserService.getAllUsers();
+            },
+            findUser: (root,{id}) => {
+                return UserService.getById(id);
+            }
+    },
+    Mutation:{
+        createUser: (root,{ input }) => {
+             return UserService.createUser(input);
+        }
+    },
+};
+
+module.exports = resolvers;
